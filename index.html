@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yongjun Park</title>
+    
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+
+    <!-- Add ui-router library here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+    
+    <!-- Custom code -->
+    <script src="js/app.js"></script>
+    <link href = "css/app.css" rel="stylesheet" type = "text/css"/>
+    
+  </head>
+  <body>
+    <div>
+      <header>
+
+        <!-- Create links to different sections -->
+          <div class="jumbotron"><h1>El Portfolio</h1><h3>By. Yongjun Park</h3></div>
+          <ol class="breadcrumb">
+              <li><a ui-sref="home">Home</a></li>
+              <li><a href="data/RESUME_NOV-15-2015.pdf">Resume</a></li>
+              <li><a ui-sref="content">Projects</a></li>
+              <li><a ui-sref="blog">Blog</a></li>
+          </ol>
+          
+      </header>
+        
+
+      <div id="display" class="container">
+        <!-- This is where your content will display -->
+        <div id="view" ui-view></div>
+      </div>
+
+      <footer>
+          <div xmlns:cc="http://creativecommons.org/ns#" about="http://creativecommons.org">
+            <a rel="license" href="//creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 International license"><img id="license-image"  src="//i.creativecommons.org/l/by/4.0/88x31.png" alt="License"/></a>
+            <small>
+                Except where otherwise
+                <a class="subfoot" href="//creativecommons.org/policies#license">noted</a>,
+                content on
+                <span href="http://creativecommons.org" property="cc:attributionName" rel="cc:attributionURL">this site</span>
+                is licensed under a
+                <a rel="license" href="//creativecommons.org/licenses/by/4.0/" class="subfoot">
+                Creative Commons Attribution 4.0 International license</a>.
+            </small>
+            
+          </div>
+      </footer>
+    </div>
+  </body>
+</html>

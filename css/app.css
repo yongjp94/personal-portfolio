@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200|Rock+Salt);
+
+header {
+	border-bottom:2px solid #e3e3e3;
+	text-align: center;
+    padding-bottom: 1em;
+    background: white;
+    background-blend-mode: screen;
+    opacity: 0.7;
+}
+
+footer {
+	position:fixed;
+	bottom:0px;
+	border-top:2px solid #e3e3e3;
+	width:100%;
+	left:0px;
+	text-align: center;
+	padding:10px;
+    background: black;
+    background-blend-mode: screen;
+    opacity: 0.7;
+    color: white;
+}
+
+li {
+    font-size: 2em;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/22/open-door.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&s=fb5db1a1a94603a409b34599de85ad7f);
+    background-blend-mode: normal;
+    color: white;
+    text-align: center;
+    font-family: Work Sans, Helvetia Neue, sans-serif;
+    font-weight: 200;
+}
+
+.jumbotron {
+    background: inherit;
+    color: black;
+    font-family: Rock Salt, Raleway, Helvetica Neue, sans-serif;
+    padding: 1em 0 0 0;
+}
+
+#display {
+    padding-top: 1em;
+    padding-bottom: 4em;
+    height: auto;
+    margin-bottom: 3em;
+    overflow: hidden;
+}
+
+#resume {
+    text-align: center;
+}
+
+#view {
+    align-content: center;
+}
+
+#license-image {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+p {
+    text-align: left;
+    font-size: 1.3em;
+    text-indent: 50px;
+}
+
+address {
+    font-size: 1.2em;
+}
+
+row {
+    overflow: auto;
+}
+
+h3 {
+    color: gray;
+}
+
+@media screen and (max-width: 720px) {
+    li {
+        font-size: 1.5em;
+    }
+}
+
+.project {
+    padding: 1em;
+    margin: 1em;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+p.description {
+    text-align: inherit;
+    text-indent: 0;
+}
+
+.row {
+    margin-top: 3em;
+}
+
